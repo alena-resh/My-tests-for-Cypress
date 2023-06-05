@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 context('My first Test', () => {
     beforeEach(() => {
         cy.visit('https://example.cypress.io/commands/actions')
