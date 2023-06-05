@@ -23,4 +23,8 @@ context('My first Test', () => {
         cy.get('p').should('exist')
         })
     })
+
+    it('renders a paragraph under the h1', () => {
+        cy.get('.container').eq(1).find('p').should('exist')
+    })
 })
