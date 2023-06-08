@@ -14,17 +14,17 @@ context('My first Test', () => {
     })
 
     it('renders a paragraph under h1', () => {
-        cy.get('.container').eq(1).find('p').should('exist')
+        cy.get('.container').eq(1).find('p').should('exist');
     })
 
     it('renders a section with correct elements', () => {
         cy.get('.container').eq(2).within(()=> {
-        cy.get('h4').should('exist')
-        cy.get('p').should('exist')
+        cy.get('h4').should('exist');
+        cy.get('p').should('exist');
         })
     })
 
     it('renders a paragraph under the h1', () => {
-        cy.get('.container').eq(1).find('p').should('exist')
+        cy.get('.container').eq(1).find('p').should('exist');
     })
 })
